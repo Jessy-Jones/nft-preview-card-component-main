@@ -1,0 +1,134 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  width: auto;
+  height: auto;
+  border: 1px;
+  font-family: sans-serif;
+}
+.card {
+  width: 330px;
+  height: 550px;
+  border: 1px;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 10px solid black;
+}
+.card-top {
+  width: 300px;
+  height: 270px;
+  border: 1px;
+}
+
+.card-top::before{
+  content: "";
+  background-color:hsl(178, 100%, 50%) ;
+  position: absolute;
+ } 
+ 
+img{
+  width: inherit;
+  height: inherit;
+  margin-left: 15px;
+}
+
+
+.topic {
+  color: hsl(0, 0%, 100%);
+  font-weight: bolder;
+  margin-left: 20px;
+  font-size: larger;
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  margin-left: 20px;
+}
+.details {
+  width: 300px;
+  height: 50px;
+  border: 1px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#ethereum {
+  border: 1px;
+  padding-top: 15px;
+}
+#clock {
+  border: 1px;
+  padding-top: 15px;
+  padding-left: 25px;
+  font-size: 15px;
+}
+div.eth {
+  display: inline;
+  margin-left: 2px;
+  color: hsl(178, 100%, 50%);
+}
+div.days {
+  display: inline;
+  margin-left: 2px;
+  color: hsl(215, 51%, 70%);
+}
+hr {
+  width: 90%;
+  color: hsl(215, 32%, 27%);
+  opacity: 0.3;
+}
+.bottom {
+  width: 300px;
+  height: 50px;
+  border: 1px;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 0.4fr 2fr;
+}
+.bottom1 {
+  border: 1px;
+}
+.bottom2 {
+  border: 1px;
+}
+#avatar {
+  width: 80%;
+  padding-top: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+#text {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: hsl(215, 51%, 70%);
+}
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+img.card-top:hover{
+color: hsl(178, 100%, 50%);
+}
+.topic:hover, span:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 375px) {
+  .card{
+    width: auto;
+    height: auto;
+  }
+  .card-top{
+    width: 330px;
+    height: 300px;
+  }
+  .bottom{
+    padding:5px 10px 15px 0px;
+  }
+  
+}
